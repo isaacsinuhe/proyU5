@@ -2,50 +2,51 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Administrador de Tareas';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1><bold>TareasRepo</bold></h1>
+        <p class="lead">Ingresa para poder adminisrar tus tareas. :)</p>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p><a class="btn btn-info" href="?r=site/about">Este es nuestro crew. :)</a></p>
     </div>
 
     <div class="body-content">
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Administra, crea, y borra tus tareas.<br></h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                <p class = 'resalta'>En este sitio puedes administrar tus tareas, puedes crear, modificar, eliminar y buscar las Tareas
+                  en el sistema, además que nos gusta consentirte, por eso cada día estamos creando nuevo contenido.
+                  ¡¡ Esperamos que te diviertas !!.</p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Mira el quién está en nuestro sistema.</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <p class = 'resalta'>Es sencillo, sólo piensa en una persona en el sistema, busca su nombre, y checa algunos
+                  de sus datos para comunicarte con él. Esto nos ayuda a estar más sincronizados con nuestras
+                  tareas y nuestros horarios. ¡Vamos!, ¡elige!.</p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Checa todos los tipos de tareas.</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p class = 'resalta'>¿Cansado de que todos te digan que hay y no poder elegir?. No sólo tienes el poder de
+                  ver que tareas existen, también puedes crear una y borrarlas a tu antojo Cuanto más flexible para tí, mejor.
+                ¡Vamos!, ¡Inténtalo!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <p><a class="btn btn-success" href="?r=tarea/index">Revisar tareas.</a></p>
+            </div>
+            <div class="col-lg-4">
+                <p><a class="btn btn-primary" href="?r=personal/index">Buscar Personal</a></p>
+            </div>
+            <div class="col-lg-4">
+                <p><a class="btn btn-danger" href="?r=tipo_tarea/index">Tipos de tareas</a></p>
             </div>
         </div>
 

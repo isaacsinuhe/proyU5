@@ -9,6 +9,14 @@ body {
     margin: 0 auto -60px;
     padding: 0 0 60px;
 }
+.resalta {
+    padding: 10px;
+    border-left: 0px;
+    border-radius: 12px 12px 0px 12px;
+    border-style: groove;
+    border-width: thick;
+    border-color: darkgray;
+}
 
 .wrap > .container {
     padding: 70px 15px 20px;
@@ -24,6 +32,7 @@ body {
 .jumbotron {
     text-align: center;
     background-color: transparent;
+    font-family: 'Glyphicons Halflings';
 }
 
 .jumbotron .btn {

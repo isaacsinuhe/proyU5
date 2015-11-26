@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="personal-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode($model->nombre." ".$model->apellidos) ?></h1>
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id_personal], ['class' => 'btn btn-primary']) ?>
@@ -28,10 +28,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id_personal',
+            //'id_personal',
             'nombre',
             'apellidos',
-            'imagen',
+            //'imagen',
             'direccion',
             'telefono',
         ],

@@ -12,14 +12,14 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tarea-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode($model->nombre) ?></h1>
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id_tarea], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Delete', ['delete', 'id' => $model->id_tarea], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Seguro quieres borrar esta tarea?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -28,8 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id_tarea',
-            'id_tipotarea',
+            //'id_tarea',
+            //'id_tipotarea',
             'nombre',
             'descripcion',
             'fechainicio',

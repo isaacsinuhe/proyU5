@@ -46,7 +46,7 @@ $this->title = 'Administrador de Tareas';
                 <p><a class="btn btn-primary" href="?r=personal/index">Buscar Personal</a></p>
             </div>
             <div class="col-lg-4">
-                <p><a class="btn btn-danger" href="?r=tipo_tarea/index">Tipos de tareas</a></p>
+                <p><a class="btn btn-danger" href="?r=tipotarea/index">Tipos de tareas</a></p>
             </div>
         </div>
 

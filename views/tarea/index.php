@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\TareaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tareas';
+$this->title = 'Tareas Asignadas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tarea-index">

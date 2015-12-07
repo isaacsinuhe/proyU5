@@ -7,7 +7,7 @@ $this->title = 'Administrador de Tareas';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1><bold>TareasRepo</bold></h1>
+        <h1><bold>¡Bienvendido!</bold></h1>
         <p class="lead">Ingresa para poder adminisrar tus tareas. :)</p>
 
         <p><a class="btn btn-info" href="?r=site/about">Este es nuestro crew. :)</a></p>
@@ -20,15 +20,14 @@ $this->title = 'Administrador de Tareas';
                 <h2>Administra, crea, y borra tus tareas.<br></h2>
 
                 <p class = 'resalta'>En este sitio puedes administrar tus tareas, puedes crear, modificar, eliminar y buscar las Tareas
-                  en el sistema, además que nos gusta consentirte, por eso cada día estamos creando nuevo contenido.
-                  ¡¡ Esperamos que te diviertas !!.</p>
+                  en el sistema, además que nos gusta consentirte, por eso cada día estamos creando nuevo contenido.</p>
             </div>
             <div class="col-lg-4">
-                <h2>Mira el quién está en nuestro sistema.</h2>
+                <h2>Observa  quién está en nuestro sistema.</h2>
 
                 <p class = 'resalta'>Es sencillo, sólo piensa en una persona en el sistema, busca su nombre, y checa algunos
                   de sus datos para comunicarte con él. Esto nos ayuda a estar más sincronizados con nuestras
-                  tareas y nuestros horarios. ¡Vamos!, ¡elige!.</p>
+                  tareas y nuestros horarios.</p>
             </div>
             <div class="col-lg-4">
                 <h2>Checa todos los tipos de tareas.</h2>

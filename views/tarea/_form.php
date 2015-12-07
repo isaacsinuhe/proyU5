@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Tarea */
@@ -18,9 +19,31 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'descripcion')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'fechainicio')->textInput() ?>
 
-    <?= $form->field($model, 'fechatermino')->textInput() ?>
+    <?= $form->field($model, 'fechainicio')->widget(
+    DatePicker::className(), [
+        // inline too, not bad
+         'inline' => true,
+         // modify template for custom rendering
+        'template' => '<div class="well well-sm" style="background-color: #fff; width:250px">{input}</div>',
+        'clientOptions' => [
+            'autoclose' => true,
+            'format' => 'dd-M-yyyy'
+        ]
+]);?>
+
+<?= $form->field($model, 'fechatermino')->widget(
+DatePicker::className(), [
+    // inline too, not bad
+     'inline' => true,
+     // modify template for custom rendering
+    'template' => '<div class="well well-sm" style="background-color: #fff; width:250px">{input}</div>',
+    'clientOptions' => [
+        'autoclose' => true,
+        'format' => 'dd-M-yyyy'
+    ]
+]);?>
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

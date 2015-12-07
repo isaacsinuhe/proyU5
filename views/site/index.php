@@ -7,7 +7,7 @@ $this->title = 'Administrador de Tareas';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1><bold>¡Bienvendido!</bold></h1>
+        <h1><bold>¡Bienvenido!</bold></h1>
         <p class="lead">Ingresa para poder adminisrar tus tareas. :)</p>
 
         <p><a class="btn btn-info" href="?r=site/about">Este es nuestro crew. :)</a></p>

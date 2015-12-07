@@ -22,10 +22,26 @@ $this->params['breadcrumbs'][] = $this->title;
     <h2 align="center"> Ingeniería en Sistemas Computacionales</h2>
     <h3 align="center"> Programación Web</h3>
     
-    <h3 align="center">Oscar Alberto Arenas Gómez</h3>
-    <h3 align="center">Jonatan Omar Camarena Ortega</h3>
-    <h3 align="center">Isaac Sinoe Gutiérrez González</h3>
-    <h3 align="center">Alexis Hermosillo Becerra</h3>
+  <a href="https://www.facebook.com/O.Arenas.9" target="_blank"><h3 align="center">Oscar Alberto Arenas Gómez</h3>   </a>
+   
+  <a href="https://www.facebook.com/Jhonee.Jhonee" target="_blank"><h3 align="center">Jonatan Omar Camarena Ortega</h3></a>
+  
+  <a href="https://www.facebook.com/isaac.s.gutierrezgonzalez?fref=ts" target="_blank"><h3 align="center">Isaac Sinoe Gutiérrez González</h3> </a>
+  
+ <a href="https://www.facebook.com/hermosillo.alexis?fref=ts" target="_blank"><h3 align="center">Alexis Hermosillo Becerra</h3></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>

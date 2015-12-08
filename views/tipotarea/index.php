@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\ArrayHelper;
+use app\models\Tipotarea;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\TipotareaSearch */
@@ -10,6 +12,14 @@ use yii\grid\GridView;
 $this->title = 'Tipotareas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<?= Html::dropDownList('s_id', null,
+      ArrayHelper::map(Tipotarea:: find()->all(), 'id_tipotarea','nombre'),
+      [
+        'prompt'=>'west west',
+
+      ]);?>
+
 <div class="tipotarea-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -26,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id_tipotarea',
-            'nombre',
+
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

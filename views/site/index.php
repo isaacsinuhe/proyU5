@@ -4,10 +4,17 @@
 
 $this->title = 'Administrador de Tareas';
 ?>
-<div class="site-index">
+<div align="right">
+<p>Clima en Tepic, Nayarit</p>
+<div id="TT_tyJ1E11EkfdaA8GAKAzDzjjDDWaAMdC2rtkYEcioa1D53IGom"><a href="http://www.tutiempo.net">Tu tiempo</a></div>
+<script type="text/javascript" src="http://www.tutiempo.net/widget/eltiempo_tyJ1E11EkfdaA8GAKAzDzjjDDWaAMdC2rtkYEcioa1D53IGom"></script>
 
+</div>  
+
+<div class="site-index">
     <div class="jumbotron">
         <h1><bold>¡Bienvenido!</bold></h1>
+
         <p class="lead">Ingresa para poder adminisrar tus tareas. :)</p>
 
         <p><a class="btn btn-info" href="?r=site/about">Este es nuestro crew. :)</a></p>
@@ -51,3 +58,5 @@ $this->title = 'Administrador de Tareas';
 
     </div>
 </div>
+
+  

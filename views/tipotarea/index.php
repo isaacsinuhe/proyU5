@@ -13,13 +13,6 @@ $this->title = 'Tipotareas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<?= Html::dropDownList('s_id', null,
-      ArrayHelper::map(Tipotarea:: find()->all(), 'id_tipotarea','nombre'),
-      [
-        'prompt'=>'west west',
-
-      ]);?>
-
 <div class="tipotarea-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -36,6 +29,14 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id_tipotarea',
+            [
+
+    'filter' => Html::dropDownList('s_id', null,
+          ArrayHelper::map(Tipotarea:: find()->all(), 'id_tipotarea','nombre'),
+          [
+            'prompt'=>'west west',
+
+          ])],
 
 
             ['class' => 'yii\grid\ActionColumn'],

@@ -1,7 +1,7 @@
 <?php
 
 namespace app\models;
-
+use app\models\Detallepersonal;
 use Yii;
 
 /**
@@ -51,4 +51,6 @@ class Tipotarea extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Tarea::className(), ['id_tipotarea' => 'id_tipotarea']);
     }
+
+
 }

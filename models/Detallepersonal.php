@@ -62,4 +62,14 @@ class Detallepersonal extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Tarea::className(), ['id_tarea' => 'id_tarea']);
     }
+
+    static public function detalle($idpersonal)
+    {
+        $db = Yii::$app->db;
+        $sql = 'Select * from detalle_personal where id_personal =:id ';
+        $detalletipo = $db->createCommand($sql)->bindValue(':id',$idpersonal)->queryOne();
+        return $detalletipo;
+    }
+
+
 }

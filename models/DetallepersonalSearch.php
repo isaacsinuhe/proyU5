@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use app\models\Detallepersonal;
 
 /**
- * DetallepersonalSearch represents the model behind the search form about `\app\models\Detallepersonal`.
+ * DetallepersonalSearch represents the model behind the search form about `app\models\Detallepersonal`.
  */
 class DetallepersonalSearch extends Detallepersonal
 {

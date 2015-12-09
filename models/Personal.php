@@ -14,7 +14,7 @@ use Yii;
  * @property string $direccion
  * @property string $telefono
  *
- * @property DetallePersonal[] $detallePersonals
+ * @property Detallepersonal[] $detallePersonals
  */
 class Personal extends \yii\db\ActiveRecord
 {

@@ -14,7 +14,7 @@ use Yii;
  * @property string $fechainicio
  * @property string $fechatermino
  *
- * @property DetallePersonal[] $detallePersonals
+ * @property Detallepersonal[] $detallePersonals
  * @property Tipotarea $idTipotarea
  */
 class Tarea extends \yii\db\ActiveRecord

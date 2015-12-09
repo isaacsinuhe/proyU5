@@ -4,22 +4,19 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\PersonalSearch */
+/* @var $searchModel app\models\DetallepersonalSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Personal';
+$this->title = 'Detallepersonals';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="personal-index">
+<div class="detallepersonal-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Crear Personal', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-    <p>
-        <?= Html::a('Agregar Tarea', ['detallepersonal/create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Detallepersonal', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -28,12 +25,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'id_personal',
-            'nombre',
-            'apellidos',
-            //'imagen',
-            'direccion',
-            'telefono',
+            'id_detalle_personal',
+            'id_tarea',
+            'id_personal',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

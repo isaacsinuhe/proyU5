@@ -2,6 +2,9 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\helpers\ArrayHelper;
+use app\models\Detallepersonal;
+use app\models\Tipotarea;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Personal */
@@ -28,12 +31,16 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            //'id_personal',
             'nombre',
             'apellidos',
-            //'imagen',
             'direccion',
             'telefono',
+        ],
+    ]) ?>
+    <?= DetailView::widget([
+        'model' => Detallepersonal::detalle($model->id_personal),
+        'attributes' => [
+            'id_tarea',
         ],
     ]) ?>
 
